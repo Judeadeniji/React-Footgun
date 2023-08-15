@@ -1,0 +1,29 @@
+{
+  "name": "react-footgun",
+  "version": "0.0.1",
+  "description": "The `useFootGun()` hook is designed for testing purposes to simulate a scenario where an asynchronous task gradually increases in complexity, potentially impacting the performance of a React application. It is important to note that deliberately causing poor performance is not a standard practice and should be used cautiously for testing purposes only.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc index.js --allowJs true --checkJs true --outDir lib --declaration true",
+    "test": "jest --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Judeadeniji/React-Footgun.git"
+  },
+  "keywords": [],
+  "author": "Adeniji Oluwaferanmi (TheLazyDev)",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Judeadeniji/React-Footgun/issues"
+  },
+  "homepage": "https://github.com/Judeadeniji/React-Footgun#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.6.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
