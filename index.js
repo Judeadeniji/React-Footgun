@@ -12,7 +12,7 @@ function useFootGun(asyncTask) {
   const heavyTask = async () => {
     const taskResults = [];
     for (let i = 0; i < iterations; i++) {
-      const result = await asyncTask();
+      const result = await Promise.all(Array.from({ length: results.length }).map(() => asyncTask()));
       taskResults.push(result);
     }
     setIterations((prevIterations) => prevIterations + 1000);
@@ -44,8 +44,7 @@ function useFootGun(asyncTask) {
     };
   }, [heavyTask]);
   
-  console.log({ iterations, results })
-  return { iterations, results };
+  return { iterations, results: results.flat() };
 }
 
 

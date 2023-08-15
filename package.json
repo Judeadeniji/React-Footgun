@@ -1,6 +1,6 @@
 {
   "name": "react-footgun",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "The `useFootGun()` hook is designed for testing purposes to simulate a scenario where an asynchronous task gradually increases in complexity, potentially impacting the performance of a React application. It is important to note that deliberately causing poor performance is not a standard practice and should be used cautiously for testing purposes only.",
   "main": "lib/index.js",
   "scripts": {
